@@ -1,32 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Sample by Asfandyar</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; max-width: 800px; margin: auto; background: #f5f5f5; }
-    h1 { color: #333; }
-    .button {
-      display: inline-block;
-      margin: 1rem 0;
-      padding: 10px 20px;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f4f8;
+      color: #333;
     }
-    .cover {
-      width: 100%;
-      max-width: 400px;
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .cover-image {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #1a73e8;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #1558b0;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin: 3rem 0 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Book Sample</h1>
-  <p><em>by Asfandyar</em></p>
+  <header>
+    <h1>Book Sample</h1>
+    <p>by Asfandyar</p>
+  </header>
 
-  <p>Welcome! This is a sample book available for public reading and download. Feel free to explore and share the link.</p>
+  <div class="container">
+    <img src="cover.jpg" alt="Book Cover" class="cover-image" />
+    
+    <div class="description">
+      <p><strong>Welcome to my book sample!</strong></p>
+      <p>This is a publicly available version of my book for anyone to read or download. If you enjoy it, feel free to share it with others.</p>
+    </div>
 
-  <p><a class="button" href="book.pdf" download>📥 Download PDF</a></p>
+    <a href="book.pdf" class="download-btn" download>📥 Download PDF</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Asfandyar. All rights reserved.
+  </footer>
 </body>
 </html>
