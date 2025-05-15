@@ -3,61 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The NBA is Rigged – Short by Asfandyar</title>
+  <title>The NBA is Rigged – by Asfandyar</title>
   <style>
+    :root {
+      --bg: #f8f9fa;
+      --text: #222;
+      --accent: #444;
+      --border: #ddd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-      color: #111;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
+
     header {
-      background-color: #222;
+      background-color: var(--accent);
       color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 2rem 1rem;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
+      margin: 0 0 0.5rem;
     }
-    .container {
+
+    header p {
+      font-size: 1rem;
+      margin: 0;
+      opacity: 0.85;
+    }
+
+    main {
       max-width: 900px;
       margin: 2rem auto;
       background: white;
       padding: 2rem;
-      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
     }
+
     .description {
-      font-size: 1rem;
-      line-height: 1.6;
+      font-size: 1.05rem;
       margin-bottom: 2rem;
     }
-    .download-link {
-      font-family: monospace;
-      display: inline-block;
-      background: #ddd;
-      border: 1px solid #888;
-      padding: 10px 20px;
-      text-decoration: none;
-      color: #000;
-      margin-bottom: 2rem;
-    }
-    .download-link:hover {
-      background: #bbb;
-      border-color: #555;
-    }
+
     .pdf-viewer {
       width: 100%;
       height: 800px;
-      border: 1px solid #aaa;
+      border: 1px solid var(--border);
     }
+
     footer {
       text-align: center;
-      font-size: 0.85rem;
-      color: #666;
-      margin: 4rem 0 2rem;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .pdf-viewer {
+        height: 600px;
+      }
+
+      main {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -67,20 +91,19 @@
     <p>by Asfandyar</p>
   </header>
 
-  <div class="container">
+  <main>
     <div class="description">
-      <p>A short read I wrote about the NBA. I'm using this as an example of how your book can be accessed. </p>
+      <p>
+        A short read I wrote about the NBA — controversial trades, superstar politics, and why fans think
+        the league might be rigged. This project also shows how your writing can be shared freely online.
+      </p>
     </div>
 
-    <a href="the%20NBA%20is%20rigged-1.pdf" class="download-link" download>
-      [Download PDF]
-    </a>
-
     <iframe class="pdf-viewer" src="the%20NBA%20is%20rigged-1.pdf"></iframe>
-  </div>
+  </main>
 
   <footer>
-    &copy; 2025 Asfandyar.
+    &copy; 2025 Asfandyar. No scripts. No trackers. Just text and basketball.
   </footer>
 </body>
 </html>
