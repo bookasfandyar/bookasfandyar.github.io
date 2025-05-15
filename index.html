@@ -23,7 +23,7 @@
       font-size: 2.5rem;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       background: white;
       padding: 2rem;
@@ -42,10 +42,16 @@
       padding: 10px 20px;
       text-decoration: none;
       color: #000;
+      margin-bottom: 2rem;
     }
     .download-link:hover {
       background: #bbb;
       border-color: #555;
+    }
+    .pdf-viewer {
+      width: 100%;
+      height: 800px;
+      border: 1px solid #aaa;
     }
     footer {
       text-align: center;
@@ -63,16 +69,18 @@
 
   <div class="container">
     <div class="description">
-      <p>A short read I wrote about the NBA. I'm using this as an example of how your book can be accessed. No fluff, just ideas.</p>
+      <p>A short read I wrote about the NBA. I'm using this as an example of how your book can be accessed. </p>
     </div>
 
     <a href="the%20NBA%20is%20rigged-1.pdf" class="download-link" download>
       [Download PDF]
     </a>
+
+    <iframe class="pdf-viewer" src="the%20NBA%20is%20rigged-1.pdf"></iframe>
   </div>
 
   <footer>
-    &copy; 2025 Asfandyar. Pure HTML. No tracking.
+    &copy; 2025 Asfandyar.
   </footer>
 </body>
 </html>
